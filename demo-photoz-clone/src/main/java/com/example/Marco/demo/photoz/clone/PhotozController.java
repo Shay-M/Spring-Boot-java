@@ -1,4 +1,4 @@
-package com.example.Marco.demo.photoz.clone.photo;
+package com.example.Marco.demo.photoz.clone;
 
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -93,6 +93,8 @@ public class PhotozController {
         db.put(photo.getId(), photo);
         return photo;
     }
+
+    // it works but what if we upload big file? , we need to change in application.properties file.
 
 
 }

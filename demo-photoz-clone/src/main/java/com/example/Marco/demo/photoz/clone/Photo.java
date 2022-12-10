@@ -1,4 +1,4 @@
-package com.example.Marco.demo.photoz.clone.photo;
+package com.example.Marco.demo.photoz.clone;
 
 import jakarta.validation.constraints.NotEmpty;
 
