@@ -1,5 +1,6 @@
 package com.example.Marco.demo.photoz.clone;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;
 
 public class Photo {
@@ -8,6 +9,7 @@ public class Photo {
     @NotEmpty
     private String fileName;
 
+    @JsonIgnore // to show img and not convert to json
     private byte[] data;
 
     public Photo() {

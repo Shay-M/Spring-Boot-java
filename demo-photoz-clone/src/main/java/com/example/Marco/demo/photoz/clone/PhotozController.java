@@ -84,7 +84,7 @@ public class PhotozController {
     }*/
 
     @PostMapping("/photoz")
-    public Photo creat(@RequestPart("data") MultipartFile file) throws IOException { // data is the key in html http://localhost:8080/Upload.html
+    public Photo create(@RequestPart("data") MultipartFile file) throws IOException { // data is the key in html http://localhost:8080/Upload.html
         Photo photo = new Photo();
 
         photo.setId(UUID.randomUUID().toString());
